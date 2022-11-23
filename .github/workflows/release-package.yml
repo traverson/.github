@@ -22,7 +22,7 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - run: npm clean-install
-      - run: npm install semantic-release@beta @traverson/semantic-release-config --no-save
+      - run: npm install --legacy-peer-deps semantic-release@beta @traverson/semantic-release-config --no-save
       - name: semantic-release
         run: npx semantic-release
         env:
